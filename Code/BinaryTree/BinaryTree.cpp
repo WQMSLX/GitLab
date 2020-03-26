@@ -4,6 +4,7 @@ using namespace std;
 struct BinaryTree {
     int value;
     BinaryTree* pLeft;
+
     BinaryTree* pRight;
 };
 
