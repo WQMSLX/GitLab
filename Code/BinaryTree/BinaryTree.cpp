@@ -7,6 +7,8 @@ struct BinaryTree {
     BinaryTree* pRight;
 };
 
+
+
 void ConvertNode(BinaryTree* node, BinaryTree*& BinaryLastNode)
 {
     if (!node)return;
