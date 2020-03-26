@@ -4,7 +4,6 @@ using namespace std;
 struct BinaryTree {
     int value;
     BinaryTree* pLeft;
-
     BinaryTree* pRight;
 };
 
@@ -14,11 +13,13 @@ void ConvertNode(BinaryTree* node, BinaryTree*& BinaryLastNode)
 {
     if (!node)return;
     BinaryTree* pCur = node;
-    if (pCur->pLeft)ConvertNode(pCur->pLeft, BinaryLastNode);
+    //if (pCur->pLeft)
+        ConvertNode(pCur->pLeft, BinaryLastNode);
     pCur->pLeft = BinaryLastNode;
     if (BinaryLastNode)BinaryLastNode->pRight = pCur;
     BinaryLastNode = pCur;
-    if (pCur->pRight)ConvertNode(pCur->pRight, BinaryLastNode);
+    //if (pCur->pRight)
+    ConvertNode(pCur->pRight, BinaryLastNode);
 }
 BinaryTree* GetHead(BinaryTree* node)
 {
