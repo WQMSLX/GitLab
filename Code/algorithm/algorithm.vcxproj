@@ -139,6 +139,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NumberTB.cpp" />
+    <ClCompile Include="快速排序.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NumberTB.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,2 +1,3 @@
 ﻿  BinaryTree.cpp
-  BinaryTree.vcxproj -> D:\Code\BinaryTree\Debug\BinaryTree.exe
+D:\GitLab\GitLab\Code\BinaryTree\BinaryTree.cpp(73,9): error C2065: “pNext”: 未声明的标识符
+D:\GitLab\GitLab\Code\BinaryTree\BinaryTree.cpp(75,12): error C2065: “pNext”: 未声明的标识符

@@ -60,7 +60,34 @@ void CreateBinaryTree() {
     TraversalList(list);
 }
 //使用中序递归遍历
+//二叉树的下一个节点
+BinaryTree* GetNext(BinaryTree* pNode)
+{
+    if (pNode == nullptr)
+        return nullptr;
+    BinaryTree * pNext = nullptr;
+    if (pNode->pRight != nullptr)
+    {
+        BinaryTree* Right = nullptr;
+        Right = pNode->pRight;
+        while (Right->pLeft)Right = Right->pLeft;
+        pNext = Right;
+    }
+    else if (pNode->m_pParent == nullptr)
+    {
+        BinaryTree* pCurrent = pNode;
+        BinaryTree* pParent = pCurrent->m_pParent;
 
+        while (pParent&& pCurrent = pParent->pRight)
+        {
+            pCurrent = pParent;
+            pParent = pParent->m_pParent;
+
+        }
+        pNext = pParent;
+    }
+    return pNext;
+}
 int main()
 {
     CreateBinaryTree();
