@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-#if 1
+#if 0
 void swap(int& a, int& b) {
 	     int c = a;
 	     a = b;
@@ -14,7 +14,7 @@ int Partition(int data[], int left, int right)
 	int temp ;
 	while (start < end)
 	{
-		while (data[end] >= base && start < end)
+		while (data[end] >= base && start <end)
 		{
 			end--;
 		}
@@ -59,7 +59,7 @@ void PrintArr(int data[],int length)
 	cout << endl;
 }
 int main()
- 
+{
 	int arr[10] = { 11 ,2,8,6,5,7,1,3,9 };
 	PrintArr(arr,9);
 	QuickSort(arr,0,8);

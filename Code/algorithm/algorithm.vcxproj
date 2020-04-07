@@ -140,7 +140,11 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NumberTB.cpp" />
+    <ClCompile Include="冒泡排序.cpp" />
+    <ClCompile Include="希尔排序.cpp" />
     <ClCompile Include="快速排序.cpp" />
+    <ClCompile Include="插入排序.cpp" />
+    <ClCompile Include="矩阵中的路径.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NumberTB.h" />
